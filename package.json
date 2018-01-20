@@ -1,0 +1,23 @@
+{
+  "name": "travelinghotdog",
+  "version": "1.0.0",
+  "description": "A travel website that helps the every day user make travel plans with friends and give out suggestions",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willievuong/travelinghotdog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willievuong/travelinghotdog/issues"
+  },
+  "homepage": "https://github.com/willievuong/travelinghotdog#readme"
+}
