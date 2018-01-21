@@ -25,10 +25,10 @@ $(document).ready( function() {
 		    	eNW.appendChild(createWarning("Please specify a name for your event."));
 		    	errorExists=true;
 		    }
-		    var eventLocation=document.getElementById("event_location");
+		    var eventLocation=document.getElementById("event_starting_location");
 		    if(eventLocation.value==""){
-		    	var eLW=document.getElementById("event_location_wrapper");
-		    	eLW.appendChild(createWarning("Please specify a location for your event."));
+		    	var eLW=document.getElementById("event_starting_location_wrapper");
+		    	eLW.appendChild(createWarning("Please specify a starting location for your event."));
 		    	errorExists=true;
 		    }
 		    if(errorExists==true)return false;
