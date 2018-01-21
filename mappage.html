@@ -2,8 +2,11 @@
 <html>
 
 <head>
-	<title>pleaseeeeee</title>
-
+	<title>G maps</title>
+   
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple icons</title>
 	<style>
 	 #map 
 	{
@@ -24,13 +27,35 @@
 <div id="map"> </div>
 
 <script>
-function myMap() {
+function myMap() 
+{
   var mapCanvas = document.getElementById("map");
   var mapOptions = {
     center: new google.maps.LatLng(34.4140, -119.8489), zoom: 10
   };
   var map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+var pos1= {lat:34.6, lng:-119.8489};
+var marker = new google.maps.Marker({
+  position: pos1,
+  map: map,
+  icon: 'pink_markerA.png'
+}); 
+
+
+var pos2= {lat:34.68, lng:-119.8489};
+var marker = new google.maps.Marker({
+  position: pos2,
+  map: map,
+  icon:'blue_markerA.png'
+}); 
+
+
 }
+
+
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkbzD-LMAZuXzbrzUpqgh0zF3C0JXGa5c&callback=myMap">
