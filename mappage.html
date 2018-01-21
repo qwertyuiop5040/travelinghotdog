@@ -6,7 +6,55 @@
    
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Simple icons</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container" style="margin-bottom:50px">
+    <div class="row">
+      <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+          <img src="img/title.png"></img>
+        </div>
+        <div class="col-md-4">
+          <div style="text-align: right">
+        <img src="images/hotdogicon.png" style="max-width: 120px;max-height: 100px">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Traveling Hotdog!!!</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class=><a href="index.html">Home</a></li>
+        <li><a href="events.html">View Events</a></li>
+        <li class="active"><a href="mappage.html">Map</a></li>
+        <li><a href="createEvent.html">Create an Event</a></li>
+      </ul>
+
+      <ul>
+            <ul class="nav navbar-nav" style="float: right">
+            <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="user.html">View Profile</a></li>
+              <li><a href="#">Log Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+
 	<style>
 	 #map 
 	{
@@ -14,7 +62,8 @@
 	}
       html, body 
       {
-        height: 100%;
+        width:100;
+        height:80%;
         margin: 0;
         padding: 0;
       }
@@ -40,7 +89,7 @@ var pos1= {lat:34.6, lng:-119.8489};
 var marker = new google.maps.Marker({
   position: pos1,
   map: map,
-  icon: 'pink_markerA.png'
+  icon: 'Google Maps Markers/pink_markerA.png'
 }); 
 
 
@@ -48,7 +97,7 @@ var pos2= {lat:34.68, lng:-119.8489};
 var marker = new google.maps.Marker({
   position: pos2,
   map: map,
-  icon:'blue_markerA.png'
+  icon:'Google Maps Markers/blue_markerA.png'
 }); 
 
 
