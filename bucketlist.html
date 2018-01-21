@@ -2,14 +2,18 @@
 <html>
 
 <head>
-<title> Traveling hotdog!!! </title>
+	<title>Bucket List</title>
+
+	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/sort.js"></script>
 </head>
 
 <body>
-  <div class="container" style="margin-bottom:50px">
+
+<div class="container" style="margin-bottom:50px">
     <div class="row">
       <div class="col-md-4">
         </div>
@@ -18,12 +22,11 @@
         </div>
         <div class="col-md-4">
           <div style="text-align: right">
-        <img src="hotdogicon.png" style="max-width: 120px;max-height: 100px">
+        <img src="http://clipart-library.com/img/733974.jpg" style="max-width: 120px;max-height: 100px">
         </div>
       </div>
     </div>
   </div>
-  
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -31,10 +34,12 @@
       </div>
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
-        <li class="active"><a href="events.html">View Events</a></li>
+        <li><a href="events.html">View Events</a></li>
         <li><a href="createEvent.html">Create an Event</a></li>
-      </ul>
+        <li class="active"><a href="bucketlist.html">Future Visits</a></li>
 
+
+      </ul>
       <ul>
             <ul class="nav navbar-nav" style="float: right">
             <li class="dropdown">
@@ -46,34 +51,25 @@
             </ul>
           </li>
         </ul>
-
     </div>
   </nav>
 
-	
+<form class="form-horizontal" action="action_page.php">
+<h1>Places to Go</h1>
+
+  <p><label><input type="checkbox" name="location"> Location 1</label></p>
+  <p><label><input type="checkbox" name="location"> Location 2</label></p>
+  <p><label><input type="checkbox" name="location"> Location 3</label></p>
+
+<!--insert how to servers here-->
+  <form action="/url-where-you-want-to-submit-form-data">
+  <input type="text" placeholder="enter a location here">
+  <button type="submit">Submit</button>
+  </form>
+
+
 
 </body>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD1hpktTGQ-26oLIo-5ien5do76eMEYspk",
-    authDomain: "travelinghotdog.firebaseapp.com",
-    databaseURL: "https://travelinghotdog.firebaseio.com",
-    projectId: "travelinghotdog",
-    storageBucket: "travelinghotdog.appspot.com",
-    messagingSenderId: "1071086047019"
-  };
-  firebase.initializeApp(config);
-</script>
-
-
-
-
-
 
 
 
