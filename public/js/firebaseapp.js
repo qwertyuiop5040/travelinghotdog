@@ -1,4 +1,3 @@
-(function(){
 	  // Initialize Firebase
   var config = {
     apiKey: "AIzaSyD1hpktTGQ-26oLIo-5ien5do76eMEYspk",
@@ -10,23 +9,27 @@
   };
   firebase.initializeApp(config);
 
+  var database = firebase.database();
+
   const txtEmail= document.getElementById('txtEmail');
   const txtPassword = document.getElementById('txtPassword');
-  const btnLogin = document.getElementById('btnLogin');
+  const btnLogIn = document.getElementById('btnLogIn');
   const btnSignUp = document.getElementById('btnSignUp');
   const btnLogOut = document.getElementById('btnLogOut');
 
   //Log in event
-  btnLogin.addEventListen('click', e => {
-  	const email = txtEmail.value;
-  	const pass = txtPassword.value;
-  	const auth = firebase.auth();
+  btnLogIn.addEventListener('click', e => {
+    const email = txtEmail.value;
+    const pass = txtPassword.value;
+    const auth = firebase.auth();
+    talk();
 
-  	const promise = auth.signInWithEmailAndPassword(email,pass);
-  	promise.catch(e => console.log(e.message));
+    const promise = auth.signInWithEmailAndPassword(email,pass);
+    promise.catch(e => console.log(e.message));
   });
 
-  btnSignUp.addEventListen('click', e => {
+  //Sign Up Event
+  btnSignUp.addEventListener('click', e => {
   	const email = txtEmail.value;
   	const pass = txtPassword.value;
   	const auth = firebase.auth();
@@ -35,7 +38,8 @@
   	promise.catch(e => console.log(e.message));
   });
 
-  btnLogOut.addEventListen('click', e => {
+  // Log Out Event
+  btnLogOut.addEventListener('click', e => {
  	firebase.auth().signOut(); 	
  });
 
@@ -44,7 +48,13 @@
   		console.log(firebaseUser);
   	}else{
   		console.log('not logged in')
+      talk();
   	}
   })
 
-}());
+  function talk() {
+  	firebase.database().ref('nothing').set({
+    "nothing": "there"
+ 	 });
+	}
+
