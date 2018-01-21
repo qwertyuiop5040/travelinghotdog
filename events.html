@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/sort.js"></script>
+</head>
+<body>
+	<div class="container" style="margin-bottom:50px">
+		<div class="row">
+			<div class="col-md-4">
+	      </div>
+	      <div class="col-md-4">
+	        <img src="img/title.png"></img>
+	      </div>
+	      <div class="col-md-4">
+	        <div style="text-align: right">
+        <img src="http://clipart-library.com/img/733974.jpg" style="max-width: 120px;max-height: 100px">
+        </div>
+      </div>
+		</div>
+	</div>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Traveling Hotdog!!!</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a href="index.html">Home</a></li>
+	      <li class="active"><a href="events.html">View Events</a></li>
+	      <li><a href="createEvent.html">Create an Event</a></li>
+
+	    </ul>
+	    <ul>
+            <ul class="nav navbar-nav" style="float: right">
+            <li class="dropdown">
+		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Account
+		        <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li><a href="user.html">View Profile</a></li>
+		          <li><a href="#">Log Out</a></li>
+		        </ul>
+		      </li>
+        </ul>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-6">
+			<h1>Event
+			Description</h1>
+			</div>
+			<div class="col-md-2">
+			<h1>Host</h1>
+			</div>
+			<div class="col-md-2">
+				 <div class="dropdown">
+				    <h1><a class="dropdown-toggle active" data-toggle="dropdown" href="#">Sort By
+		       		 <span class="caret"></span></a></h1>
+				    <ul class="dropdown-menu">
+				      <li><a href="javascript:sortBy('recent')">Recent</a></li>
+				      <li><a href="javascript:sortBy('popular')">Popular</a></li>
+				      <li><a href="javascript:sortBy('recommended')">Recommended for you</a></li>
+				    </ul>
+				  </div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img src="INSERT_IMG" alt="event img"></img>
+			</div>	
+			<div class="col-md-6">
+				<div class="container" style="padding:0px;margin:0px">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 style="padding:0px;margin:0px">EVENTNAME</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p>Lorem ipsum blahbnkladsjafdlnckjlkdfn fdsa df dfd s fsd</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+			by HOSTNAME
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">
+				<img src="INSERT_IMG" alt="event img"></img>
+			</div>	
+			<div class="col-md-6">
+				<div class="container" style="padding:0px;margin:0px">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 style="padding:0px;margin:0px">EVENTNAME</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<p>Lorem ipsum blahbnkladsjafdlnckjlkdfn fdsa df dfd s fsd</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+			by HOSTNAME
+			</div>
+		</div>
+	</div>
+</body>
+</html>
